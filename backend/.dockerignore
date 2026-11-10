@@ -1,0 +1,11 @@
+# 不把密钥、数据库、缓存、测试产物打进镜像
+.env
+*.env
+!.env.example
+data/
+tests/test_sentinel.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+models/*.parquet
+*.log

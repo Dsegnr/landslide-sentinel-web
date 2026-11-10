@@ -1,0 +1,28 @@
+{
+  "site": "baishuihe",
+  "center": [
+    110.535833,
+    31.026111
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    13221,
+    6704,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 110.50048828125,
+    "east": 110.56640625,
+    "north": 31.052933985705156,
+    "south": 30.996445897426383
+  },
+  "elev_min": 53.0,
+  "elev_max": 1165.7,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}

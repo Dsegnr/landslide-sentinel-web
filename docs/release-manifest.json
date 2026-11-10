@@ -1,0 +1,1034 @@
+{
+  "date": "2026-11-10",
+  "scope": "Web source only; clean export",
+  "files": [
+    {
+      "path": "backend/routers/admin.py",
+      "sha256": "f47bc2e022482dd7f943b74e67ac8c89c6b45fb00b3a7ce536534f38035d6e03"
+    },
+    {
+      "path": "backend/routers/alerts.py",
+      "sha256": "006b4cb4a19eeb8cfdc035092605460bc0522b5a1dab86f1d9957cfaf428a1ae"
+    },
+    {
+      "path": "backend/routers/auth.py",
+      "sha256": "408ef50b0dccafc2ff59df297616ee5610299b1a818606ed7f74940cb783107b"
+    },
+    {
+      "path": "backend/routers/health.py",
+      "sha256": "8efd4b9b3467576663d8093db0f7c7756733420d517baeeb1bf2b38b3868231d"
+    },
+    {
+      "path": "backend/routers/ingest.py",
+      "sha256": "629e03cd638df5da6f14e5d2e800f24b9624bc04bf3e4777936adedcbb6b4d74"
+    },
+    {
+      "path": "backend/routers/maptiles.py",
+      "sha256": "895c7a4560f11654c357df0e4f003d905789670e970a44abab47ce72f82eba4c"
+    },
+    {
+      "path": "backend/routers/ops.py",
+      "sha256": "e3f0c8fc70caaede13c1a6cdf50f763755a4ccb9ff7e9eda03d55fd5d139839e"
+    },
+    {
+      "path": "backend/routers/points.py",
+      "sha256": "ebc226037c4649b447a7d47ddccb71bd3f949a42f1a6c2669b4cde21433ba05c"
+    },
+    {
+      "path": "backend/routers/predict.py",
+      "sha256": "a9776203462864f2d77a227fe715898a6ce41dd5da571a91201c0b9bae9c4274"
+    },
+    {
+      "path": "backend/routers/qr.py",
+      "sha256": "a60549df045de32ba13343927831afa60366197f40e710589ef54e6f601c8387"
+    },
+    {
+      "path": "backend/routers/records.py",
+      "sha256": "e55360b1f5b84d65a52503c14b22931f408051b5476dfdacf79f2c578786ffdf"
+    },
+    {
+      "path": "backend/routers/sensors.py",
+      "sha256": "2ce5b7c776349b40c6aa652c3c081d3b8ffe33efc86d2e07b24cced2789285ad"
+    },
+    {
+      "path": "backend/routers/stream.py",
+      "sha256": "bc38fa5ca6351e433acda56d6cb896acd5b9dad6fda584515a9698b8af4fec37"
+    },
+    {
+      "path": "backend/routers/wave.py",
+      "sha256": "557ed13f7d6eeba207a6a6cf465d3747c0ba3d0aba9072aeb4c3ff27d4164331"
+    },
+    {
+      "path": "backend/routers/weather.py",
+      "sha256": "4475eaba995d1b6b74bd11b2087b5c3b08c7ad249d731059ce73b13eaf6f259b"
+    },
+    {
+      "path": "backend/routers/__init__.py",
+      "sha256": "27287d2f9cba1be79974294d12fd2f184a7ed04cf1224c54157766fee6f70246"
+    },
+    {
+      "path": "backend/services/alert_engine.py",
+      "sha256": "4125b7feb79976f273743a218b403b6b2df1a7341a276ea15e7fe59538fcb066"
+    },
+    {
+      "path": "backend/services/auth.py",
+      "sha256": "f86111fe81c2da7ef75c9fdd7ea14b81bb82303646c5aba39a1c13a27315e496"
+    },
+    {
+      "path": "backend/services/broadcast.py",
+      "sha256": "b9d171d231e84a955e7b2ca82bb1c095e11fee692d0b3d7f9b57e173635dc082"
+    },
+    {
+      "path": "backend/services/device_manager.py",
+      "sha256": "e1c5417ac594434368c637e6649d52d47a8c83d31bad7b2b99fd4aeffa45a590"
+    },
+    {
+      "path": "backend/services/ingest.py",
+      "sha256": "1f802a1e49574bcd51d217f9e51776311773f721439741a381ccf25ddc5b3814"
+    },
+    {
+      "path": "backend/services/notify.py",
+      "sha256": "26a03468847428a423758f96a8603552922322421082003899acbb89357ce23d"
+    },
+    {
+      "path": "backend/services/ops.py",
+      "sha256": "a757a3d45e44d27b371417d9bc705127ba846acd8acff8f9c65e19d9ed34d31f"
+    },
+    {
+      "path": "backend/services/ops_quality.py",
+      "sha256": "b91ccbc917ca519956f4ee2c2a8b9077e6b6c46eb4b379c9e515212064b74195"
+    },
+    {
+      "path": "backend/services/predictor.py",
+      "sha256": "32d555a95ad352ebb87ab69367cbaf2c415e46f02f5333d8aad4aa57f7e55ff6"
+    },
+    {
+      "path": "backend/services/reservoir.py",
+      "sha256": "258d171d90112584d7eb302e6b8bb8ce12e302ac23a2bdeacb716212cf6f659c"
+    },
+    {
+      "path": "backend/services/security.py",
+      "sha256": "38677b2e5dfc639fbcdecda045e0df07ae6f6aee0154e49a8ced40bb01b60886"
+    },
+    {
+      "path": "backend/services/telemetry.py",
+      "sha256": "6687a6b8622a2af1c7788574badb6c795c9638483462ba2e3c2ffba84f493dc5"
+    },
+    {
+      "path": "backend/services/timeutil.py",
+      "sha256": "6a8eec48c920a8568f2bcee6557577acd29d11393b19e317d9c39650b70ca721"
+    },
+    {
+      "path": "backend/services/tuya_client.py",
+      "sha256": "40514a059b843e90f9713ec7ad7a4a1058ce785a1fade1f20ce87b39c1933111"
+    },
+    {
+      "path": "backend/services/virtual_device.py",
+      "sha256": "fa25d71549f7c469cf07cf04130ce7d3e776b1c8e2596d03ef1338ca1ae887a8"
+    },
+    {
+      "path": "backend/services/wave.py",
+      "sha256": "7ef9463b632ec9739fb57c0b718af7bf7000ad889cbccf677f848d000d5b817d"
+    },
+    {
+      "path": "backend/services/wave_presets.py",
+      "sha256": "ba599c5d9ce6e627a6facfe442e0c026f1d8b1ece2ba90988b5e9c039a526807"
+    },
+    {
+      "path": "backend/services/wave_watch.py",
+      "sha256": "fb4e033f680d1bbffb55814661fe29bee8e0bcd7195c9517da8c24fda57ddc3b"
+    },
+    {
+      "path": "backend/services/weather.py",
+      "sha256": "afc98b75e7de9114467134711b828bec66139b6598c660eb4cc6e98b4dc0d580"
+    },
+    {
+      "path": "backend/services/__init__.py",
+      "sha256": "730203b4156bf9a212847cd7e3c2707c57e11004ecb43a6445e566155a6acd47"
+    },
+    {
+      "path": "backend/tests/run_all.py",
+      "sha256": "153128ce3a57aa3b829a0640caae9a01fb88f5275dc8d6be4142ed9c99d4fd57"
+    },
+    {
+      "path": "backend/tests/test_alerts.py",
+      "sha256": "aaffa1cb178c1172e1fadea5cc751a781506ad4c2c033ba2242a0ecd50efb005"
+    },
+    {
+      "path": "backend/tests/test_api_predict.py",
+      "sha256": "01a9607ba95f7d62ef670881cbdaa609914ee372b91a9330e6c6a5bf7f1440d0"
+    },
+    {
+      "path": "backend/tests/test_auth.py",
+      "sha256": "efe31ea94576b3fa388f7d3ffde1f4ebbc1a9ba6c59e7d6bf82e3acd5a5486e4"
+    },
+    {
+      "path": "backend/tests/test_dashboard_api.py",
+      "sha256": "849ca7aa8c3cb754762bf4c2b8260b9eebb537333217cfb71d2f1ad2e53afa1a"
+    },
+    {
+      "path": "backend/tests/test_distance_channel.py",
+      "sha256": "ac70e3a00021ecc7804cb41a1be973d20bf9a0ea0bd604a1a33662cd3051fa37"
+    },
+    {
+      "path": "backend/tests/test_e2e_alert.py",
+      "sha256": "1bafb1c7779b92ab5a67cc43acaa8b5f7e08431339c04ab2d5c5cc68074b51fb"
+    },
+    {
+      "path": "backend/tests/test_health.py",
+      "sha256": "d4dab12fee2b6d6c480c72874e991bb2b68ab52528ff21e0dec0d2bb3af5fd10"
+    },
+    {
+      "path": "backend/tests/test_ingest.py",
+      "sha256": "25a29418e921b3031a08d22295f73217913fbf7c63f8fbcf83ed8eaab6dc66f0"
+    },
+    {
+      "path": "backend/tests/test_ingest_api.py",
+      "sha256": "1ff37e47657dd17b98f88948510c10d0a07825604891ae21d75868b3880a33c1"
+    },
+    {
+      "path": "backend/tests/test_maptiles.py",
+      "sha256": "9dfe92cfbf0bf36d9e2141d1d24ff07381cfc0dc6c317f512d975ca01c81b9a3"
+    },
+    {
+      "path": "backend/tests/test_notify.py",
+      "sha256": "339adcf431d369d6dc1f9db3bdb8b61cd09d20292e17e004e1b11c261efcb0e7"
+    },
+    {
+      "path": "backend/tests/test_no_data_is_not_calm.py",
+      "sha256": "b95eb52bebeafebd6edd18618191566d0727c657e980416ae4eabacb0679ea07"
+    },
+    {
+      "path": "backend/tests/test_ops_api.py",
+      "sha256": "55b2a8243281598d98747e5f4969eacdb1d4b9ff6b67f5ffcc33e4588acb9195"
+    },
+    {
+      "path": "backend/tests/test_ops_quality.py",
+      "sha256": "7a60ddc356045fdb5f080e6af607edf3adeb908aff0dbc86d9931809cd20293b"
+    },
+    {
+      "path": "backend/tests/test_points.py",
+      "sha256": "04f9d83f1f0a20ad659c622446463f9cf55a624da0b3848b197096cb028f7bf0"
+    },
+    {
+      "path": "backend/tests/test_predict.py",
+      "sha256": "ccb6248db4378dc33468488477650cfe26d98b1fd86fd0a7203cb4ee37bebbb2"
+    },
+    {
+      "path": "backend/tests/test_prediction_throttle.py",
+      "sha256": "521a64411f6f11599faaf8b7ac8293518a581ced930977b4977b802050bf14fb"
+    },
+    {
+      "path": "backend/tests/test_qr_api.py",
+      "sha256": "9831f9e033f2c13d3783748b9fa23a634da6908b6772a25423e97a0cfb08d093"
+    },
+    {
+      "path": "backend/tests/test_rain_channels.py",
+      "sha256": "9edb508b1b2d813d1a99635be046fafed15a4d5bd3dff96b2639d166a05505e7"
+    },
+    {
+      "path": "backend/tests/test_records.py",
+      "sha256": "98b1c376f284ec53f3b067e6d3c19b126c5fd0d49371ea89252094ffea25b5fe"
+    },
+    {
+      "path": "backend/tests/test_reservoir.py",
+      "sha256": "3d890c340d3df1db58ff49f36478d4886ee7aa1dcffcbfac38899158b3f732c8"
+    },
+    {
+      "path": "backend/tests/test_sampling.py",
+      "sha256": "056dcec8a8eccc3eab85c6f07599b0fef5feadbde87e21deb7f726cc3ef6d201"
+    },
+    {
+      "path": "backend/tests/test_security.py",
+      "sha256": "8d40174325172b94527d1654d0498d46fde4c76673c2aa7721a602a22327551f"
+    },
+    {
+      "path": "backend/tests/test_sentinel_window.py",
+      "sha256": "a5b7f372bf12a999ad0b3b7eeaec84fafc46611576bbea817e973e1a000c206f"
+    },
+    {
+      "path": "backend/tests/test_stream.py",
+      "sha256": "a5d7e41af9184980d6c50ad513d55e36481b9352c92e7e09064a2538b0836f2e"
+    },
+    {
+      "path": "backend/tests/test_telemetry.py",
+      "sha256": "153aa4eec07ffc52480c677d75e30aeecbbe7726c38e88d0f13df1cb8ae328e3"
+    },
+    {
+      "path": "backend/tests/test_wave.py",
+      "sha256": "732b61f9a550bd9f13500bf949a0cb94d5f6e7a2cdb0ea422a394af1e378c4e4"
+    },
+    {
+      "path": "backend/tests/test_wave_api.py",
+      "sha256": "d5b4b6ed2873a8db98b6663cd78107bba428e5b6379404cc524544fa9d41506e"
+    },
+    {
+      "path": "backend/tests/test_wave_watts.py",
+      "sha256": "358c575fb5824edcf5e2929dda6fd8fb89b54d789d25f578fcdc5aa7fe684bc4"
+    },
+    {
+      "path": "backend/tests/test_weather.py",
+      "sha256": "e1da5869c128c063971d38a5393af917d62cfb4ab859f67ddd5e39044c1b347b"
+    },
+    {
+      "path": "backend/tests/test_weather_batch.py",
+      "sha256": "3ed9f906afa7273de0929e0204a61548a745279748a264973af66b9ef6556ac3"
+    },
+    {
+      "path": "backend/tests/_bootstrap.py",
+      "sha256": "a4f8f2fc7f4606daa9047d1ed3b5502d5870224d72c69a9112fc2cd33121cdcc"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "sha256": "0eff3447bedf3dc62f93d3ba4043a7e8c1e941eeb8ba3b1b17b8965bb794f37b"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "404df589952453313eb6507a322162b59bdc26171ab6f6893a12d52113f6847f"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "sha256": "3fc8ca063c24a970d9d188a6042a1618aa2cff6517f5088ef38fc676ad58f09a"
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "sha256": "3f921e462618259b39a979b33a807ed52a7de195b3f6f456ac11686e3a70e6b3"
+    },
+    {
+      "path": "frontend/src/components/AdminPanel.tsx",
+      "sha256": "7395094b18b70645e0cf418b3729b3539b2b9090396287879220cde0b4ae7a81"
+    },
+    {
+      "path": "frontend/src/components/AlertPanel.test.tsx",
+      "sha256": "19b90465583b329b3e776adbe66ce5ec8bdd8865ac3dc5ba2408e09eabc24ac6"
+    },
+    {
+      "path": "frontend/src/components/AlertPanel.tsx",
+      "sha256": "85340d53081f07eee99d7404b0f967e50526397794aa051688157a9aff177c12"
+    },
+    {
+      "path": "frontend/src/components/ChinaMap.tsx",
+      "sha256": "371051934b7081854c1c682c0859bb06c4801d1d1d56097f9d3aec5c607fa015"
+    },
+    {
+      "path": "frontend/src/components/DataCards.test.tsx",
+      "sha256": "658326bc0054bdbfc292dd11fa86e4a37ef69e881b171e0d8fe31e730cab92ec"
+    },
+    {
+      "path": "frontend/src/components/DataCards.tsx",
+      "sha256": "63e8cc14c285f8913b58aaadb42f790f7db4e251e0332054510a668ec6785b7b"
+    },
+    {
+      "path": "frontend/src/components/DatasetSelector.tsx",
+      "sha256": "7f72e339b61485180ec722ade0d0f9bfe2ce313492645792be3a60afba6aa0a6"
+    },
+    {
+      "path": "frontend/src/components/LevelTimeline.test.tsx",
+      "sha256": "5d8d39a7a854fcf3081f11e737e4e19e5a1ae45407c4428b271b4426cd09b9d4"
+    },
+    {
+      "path": "frontend/src/components/LevelTimeline.tsx",
+      "sha256": "067f95cc4c1797e5a26f0ad1710a7ada74c38fdcac8782d5e310e67e7cbb5a1f"
+    },
+    {
+      "path": "frontend/src/components/LoginView.test.tsx",
+      "sha256": "15bf4b30842f739d4118f18099c9700af33710c891f88758bf999e46f2966aba"
+    },
+    {
+      "path": "frontend/src/components/LoginView.tsx",
+      "sha256": "af792aeba4bec02b6827369f90ac4e65d7377df7cd5a53c98143a6b8e6ee641c"
+    },
+    {
+      "path": "frontend/src/components/MapPro.tsx",
+      "sha256": "333ece8a4ee15fde93c68b1f4d66a749a1f5766e571e00aa355203765d3c3507"
+    },
+    {
+      "path": "frontend/src/components/MobileTabs.tsx",
+      "sha256": "f3ece83f1e6cb195594447256947eef36cd95248b7337ada1a85cfaab4f75b15"
+    },
+    {
+      "path": "frontend/src/components/Modal.test.tsx",
+      "sha256": "5957282bd527282496d7dd9fe5209808076419349a66fef9660c93d432a55745"
+    },
+    {
+      "path": "frontend/src/components/Modal.tsx",
+      "sha256": "3692bdd80eec0602be1e15d5fdb564e1a5f79e93da580ea0c9a6fa6349e1a43e"
+    },
+    {
+      "path": "frontend/src/components/NavBar.tsx",
+      "sha256": "79473a32cede3e5cdb7eee6e04c03a1194b97be32c894ad1c1cf4d7ec35767d9"
+    },
+    {
+      "path": "frontend/src/components/Panel.tsx",
+      "sha256": "fcdd7e53cb2571bc15dd21f23acce3ad96e87a637be3450d94c42a2b9869a9bc"
+    },
+    {
+      "path": "frontend/src/components/PointForm.test.tsx",
+      "sha256": "e3c412d9ccb6aac15f176d6cdb3c112d6c03ae279ed384edfaef3b225af03f84"
+    },
+    {
+      "path": "frontend/src/components/PointForm.tsx",
+      "sha256": "eec525eda605ad086555f326814324514e305be30109fd27602a6a3c3c142946"
+    },
+    {
+      "path": "frontend/src/components/PredictionPanel.test.tsx",
+      "sha256": "1a66a4eab77e496a3006fd09a09cb02835b2173050335428849b6b86e5b01ebc"
+    },
+    {
+      "path": "frontend/src/components/PredictionPanel.tsx",
+      "sha256": "3ba97adcb3fc5954671cf91b04bb57eac8de69070cdba379aea8c94a0c3e4683"
+    },
+    {
+      "path": "frontend/src/components/RecordForm.tsx",
+      "sha256": "f57c8d369c14763b5b974eb1ebd387b96a7a4c638a7f9d5e49a162d39b490a58"
+    },
+    {
+      "path": "frontend/src/components/RetainedTerrain.test.tsx",
+      "sha256": "26da7dd5aac82526da2ab09ded68250dacc7de6fc06486c431f519ce6871bbed"
+    },
+    {
+      "path": "frontend/src/components/RetainedTerrain.tsx",
+      "sha256": "528119ba68b63b2698b6753c486ed087db1485d0442dec611ecef4c224ac938d"
+    },
+    {
+      "path": "frontend/src/components/ShareQrModal.tsx",
+      "sha256": "6f5d8438423dfe32ed33989c41aff08d17733554bd974be49ccebce142954075"
+    },
+    {
+      "path": "frontend/src/components/SiteSeriesPanel.test.tsx",
+      "sha256": "25ea67ebce636682a59881b4e88151d21e9f7fed8988df89e1585cb3440e5b5e"
+    },
+    {
+      "path": "frontend/src/components/SiteSeriesPanel.tsx",
+      "sha256": "2c72871428493a95103db56fa21510266e8e7e04ad55b67149bd81fb7828fe6d"
+    },
+    {
+      "path": "frontend/src/components/TopBar.test.tsx",
+      "sha256": "7cce96f8af510392c606716991e02efa3eb98623765f3570c151a15ae19408ec"
+    },
+    {
+      "path": "frontend/src/components/TopBar.tsx",
+      "sha256": "b6662af092e21b005783ad9005965d319b04c684bc62925e2d9761458e1b4d49"
+    },
+    {
+      "path": "frontend/src/components/TrendChart.tsx",
+      "sha256": "16acb860663705038c84f14c2a71db9b450eafd5211ec29d8a7c4cc53a2da14f"
+    },
+    {
+      "path": "frontend/src/components/WavePanel.test.tsx",
+      "sha256": "cc7d55da73f2cebbd239a7e2fb0061b94b222817a4a4aad77687abe3661ed2c9"
+    },
+    {
+      "path": "frontend/src/components/WavePanel.tsx",
+      "sha256": "25532315aee87bf54acb6601f88f301ed41d5ccbabff1b5168cdb786d7a9f1f0"
+    },
+    {
+      "path": "frontend/src/hooks/useAuth.ts",
+      "sha256": "749da2b9c7fc02ff3498937d5f4f2d34a21932239646bc5c0f3754ece96f722a"
+    },
+    {
+      "path": "frontend/src/hooks/useClock.ts",
+      "sha256": "4b916480d85268547a8f6b54d0851af6daea574fbdf6dfb68c95aa1b1c56a12b"
+    },
+    {
+      "path": "frontend/src/hooks/useDemoLevel.ts",
+      "sha256": "4d690a6eddb7f931e1aa3e1c787886403fcd391a5276d8e2836df98750b130d6"
+    },
+    {
+      "path": "frontend/src/hooks/useECharts.ts",
+      "sha256": "66411ce4712fef4968433f57b382fe30aad543631315b0719252fb2b5cf7cfdd"
+    },
+    {
+      "path": "frontend/src/hooks/useHashRoute.test.ts",
+      "sha256": "52690b60c2b108bea04faf3f316dc6cda4601edd5fea6693524b50a7165b176a"
+    },
+    {
+      "path": "frontend/src/hooks/useHashRoute.ts",
+      "sha256": "8e6db4937df2094e512dd98e14b85b5c714dc6a54870b9a69787e6fc8b3023fb"
+    },
+    {
+      "path": "frontend/src/hooks/useLiveStream.ts",
+      "sha256": "730a36734338b5013194603ab233e23022f5f6dc4fba4e7007c805dc1885a778"
+    },
+    {
+      "path": "frontend/src/hooks/useOpsResource.test.tsx",
+      "sha256": "19d90934afde4321d7f5241690c824d2aceb806a12b76ef2273e1e1ccaf26abf"
+    },
+    {
+      "path": "frontend/src/hooks/useOpsResource.ts",
+      "sha256": "fae3e21c4ad5710c3324be6dc7463474c11916bf8b42bdd8e3115e8da3567ce6"
+    },
+    {
+      "path": "frontend/src/hooks/usePolling.test.tsx",
+      "sha256": "158ce929037645b8d02f75fa7092c0160a6f79b0a0fc7bbd7f72ac8d289fb5cc"
+    },
+    {
+      "path": "frontend/src/hooks/usePolling.ts",
+      "sha256": "71448bc7c4d8a0e0512cde16656fd170c0265cfff4402410ade7c69296ae7542"
+    },
+    {
+      "path": "frontend/src/hooks/useSelectedDevice.ts",
+      "sha256": "61116fc23dd04411460eeacae05532007c8ddb701b8a614694936fa4096ac95f"
+    },
+    {
+      "path": "frontend/src/hooks/useTelemetry.test.tsx",
+      "sha256": "aaada72a1e04ba5847e8aaf8f8903bdd80b4712b5750ac80113ad2a32103c07b"
+    },
+    {
+      "path": "frontend/src/hooks/useTelemetry.ts",
+      "sha256": "47e309e4c9296c1cfea1445eb07cb8b8410b76cb9648ac8eb5f0f31fcc36d5a5"
+    },
+    {
+      "path": "frontend/src/hooks/useWeatherMarks.ts",
+      "sha256": "604c5635197c444f3f70fcffce06d50b749fccbc4891d43df5ac303613b61c0e"
+    },
+    {
+      "path": "frontend/src/lib/api.test.ts",
+      "sha256": "9fedc2dad91c4cfcb4bee68a091cf4015beab0a1fe2c16989e57654998764145"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "sha256": "26dc3a6f7f73023a65f30b6bf75f31c2044842554f6da6924f46336a8ea81f78"
+    },
+    {
+      "path": "frontend/src/lib/auth.test.ts",
+      "sha256": "f38a5173d94cf318f56fe69f631591a3eeaee2e82efd8f4b21a4ebcc56caea0c"
+    },
+    {
+      "path": "frontend/src/lib/auth.ts",
+      "sha256": "8cec101156fe534d826d4a8eeaa78b84abbbbdb729a16bac782443c0b904ae59"
+    },
+    {
+      "path": "frontend/src/lib/cities.ts",
+      "sha256": "97d9b823a0631d6c07b0e59b16780a8c38977436b438b851adb0d66077db9ca9"
+    },
+    {
+      "path": "frontend/src/lib/clipboard.test.ts",
+      "sha256": "c1d3d0ceb93ecda78128377c1339521775fbb9b0bc4150955395abe0089eef70"
+    },
+    {
+      "path": "frontend/src/lib/clipboard.ts",
+      "sha256": "a3c5c87796a5eab716dd97c3c4c2c057b58b9a0788e4e1332c2b37d312703252"
+    },
+    {
+      "path": "frontend/src/lib/echarts.ts",
+      "sha256": "193f6c13f4f8ba5922c97f83f98221227e27125d97ff9b254ec964bd2ef8c192"
+    },
+    {
+      "path": "frontend/src/lib/fieldThumbnails.json",
+      "sha256": "93f648a31788fa07e03d1541713dc2cb3fc0136e76757f24a38e2ba63dfb09af"
+    },
+    {
+      "path": "frontend/src/lib/format.test.ts",
+      "sha256": "627f3a77f6a5cdc510eed302b697ab661d039791562848fa9f11751524b8d72b"
+    },
+    {
+      "path": "frontend/src/lib/format.ts",
+      "sha256": "85184ec069ce3ec7a41dda389f21a356bc172886c25044f7c0de26e822b16794"
+    },
+    {
+      "path": "frontend/src/lib/gcj02.ts",
+      "sha256": "0a092a466f932afc1c6fe42e12dbe91615a8fc7c74cb7f2046c9bd50c994284d"
+    },
+    {
+      "path": "frontend/src/lib/geo.test.ts",
+      "sha256": "cafaeefdf956b7f98fde1a3f59ea89033dc220c0a747e61e4d5c5b78b97420bc"
+    },
+    {
+      "path": "frontend/src/lib/geo.ts",
+      "sha256": "02c6a943ca7c20a61d796c8dde1205925501d86b19b2833bacf0e997033b03d8"
+    },
+    {
+      "path": "frontend/src/lib/impact.test.ts",
+      "sha256": "34d2193d558b071adeac3649d7180d3eed62bed82c21fa4452a0c013b031e77d"
+    },
+    {
+      "path": "frontend/src/lib/impact.ts",
+      "sha256": "d12782c38d0acb3ee2d2198fbcba889b0c4791b5cf18109e9299902058e5dc04"
+    },
+    {
+      "path": "frontend/src/lib/levels.test.ts",
+      "sha256": "138f4c60d4e14b2acf125fe793ef4d5c26c1461f3e92425c3c3a043a2cf26e30"
+    },
+    {
+      "path": "frontend/src/lib/levels.ts",
+      "sha256": "ea81317132ca9b369ecaa41e0ea370d99652ed69444f28e3df135e3ae88798e7"
+    },
+    {
+      "path": "frontend/src/lib/mapTilePool.test.ts",
+      "sha256": "d3d7f1f53a3f7a76eb3d296966451c2474ed3443327a358d97258a6130da4db2"
+    },
+    {
+      "path": "frontend/src/lib/mapTilePool.ts",
+      "sha256": "2f636b517838324fbd62d1b7cf0c34923a9b6a1a634be5a0329b94ca7009418e"
+    },
+    {
+      "path": "frontend/src/lib/mapViewportWarmup.test.ts",
+      "sha256": "3bc0faed6d5ab816151d587bb935da27cfccbd2329ea2cb8a6a0266b37cd844f"
+    },
+    {
+      "path": "frontend/src/lib/mapViewportWarmup.ts",
+      "sha256": "c3ce05a341f5b794656870c8d5e3e6baa2914f5002d01b75f42aa02ba27d3643"
+    },
+    {
+      "path": "frontend/src/lib/opsPreparation.test.ts",
+      "sha256": "86555abd07a60af6acdd0019ebfbe3b43038d58b5f0e15e368825064699d81a1"
+    },
+    {
+      "path": "frontend/src/lib/opsPreparation.ts",
+      "sha256": "b047e14de23e10e2b94cafe567c4ce6014a6cd075f173dcb8d2db172eb4bcba8"
+    },
+    {
+      "path": "frontend/src/lib/opsSnapshots.test.ts",
+      "sha256": "c6d0dc61eb178117a3b072763ce27bfbac75e13f6e8823981ca3ecae9c1bfad9"
+    },
+    {
+      "path": "frontend/src/lib/opsSnapshots.ts",
+      "sha256": "dd45d08b129d668944218fa606eb0531083f205eaf0c18a04fbf7fe71e329b02"
+    },
+    {
+      "path": "frontend/src/lib/presentation.test.ts",
+      "sha256": "ef46ff9b803920ffdff741b418691232bc7d16ba4d2dda324cde607e19c2d65d"
+    },
+    {
+      "path": "frontend/src/lib/presentation.ts",
+      "sha256": "3eac895f5b72190afbba130781aa0950b1f5930053e3c4285c0ef525de5e5f38"
+    },
+    {
+      "path": "frontend/src/lib/presentationApi.ts",
+      "sha256": "26e606135f028623affa5045a26f9e089f9fb884e134624a04554d5d8b0ac2c7"
+    },
+    {
+      "path": "frontend/src/lib/presentationLoading.test.ts",
+      "sha256": "7d68b250fdd0a70a1cb0c2828c373859b045488bcb912ccfa0461db816690aef"
+    },
+    {
+      "path": "frontend/src/lib/radarFrames.test.ts",
+      "sha256": "6510d49de660f01e7fb3178b21eb3972815309efe4fa664f5ee07a48a0976baf"
+    },
+    {
+      "path": "frontend/src/lib/radarFrames.ts",
+      "sha256": "148c1f8bf4b35b9f5caec87ea366a9036ec2b3a6b310bd9d1e7cdb0c4943d993"
+    },
+    {
+      "path": "frontend/src/lib/rainField.ts",
+      "sha256": "3d3307e2bdf294d38321aaa16c02e4ad1c49580d8032c09e831917cb6c83f3dd"
+    },
+    {
+      "path": "frontend/src/lib/ReliableTileLayer.test.ts",
+      "sha256": "0d7e35057e9998768a0112d4f49f400ff9846d20c308e47b83c114a1d064904c"
+    },
+    {
+      "path": "frontend/src/lib/ReliableTileLayer.ts",
+      "sha256": "425f2958ea289e1e69770e3e967753c7ee6c24ada6f6a0df15ed14070718ec31"
+    },
+    {
+      "path": "frontend/src/lib/resourceCache.test.ts",
+      "sha256": "3b101bcd83211b4a0a6c1f3758ca2854003e473a62624fa1e736071f7b9ffc6e"
+    },
+    {
+      "path": "frontend/src/lib/resourceCache.ts",
+      "sha256": "c2721781ee711c36ef3294365555494ff2a924eb0e7d37a18f01570265cd954e"
+    },
+    {
+      "path": "frontend/src/lib/routeResources.test.ts",
+      "sha256": "825a11e705581e45ed1d8c74253a8ee48e60f3c9b0389e625af523304fd2cb7b"
+    },
+    {
+      "path": "frontend/src/lib/routeResources.ts",
+      "sha256": "7da7f1db12594214af1e64a6cfd055d1c4a5dd8e6834f1e523d48be84bc57e61"
+    },
+    {
+      "path": "frontend/src/lib/series.test.ts",
+      "sha256": "e1994b8847ffb44c360f7b89dae31be61b401255257c4c9f5689371b9a1cdeb5"
+    },
+    {
+      "path": "frontend/src/lib/series.ts",
+      "sha256": "de2149b13b812942ab5398581ad4c65f485372269fc51cee7ac73096ab4a542e"
+    },
+    {
+      "path": "frontend/src/lib/sites.ts",
+      "sha256": "f9d76876547b5bfa4820fc3a54b8ea35c4f5a69deffb805fec9b5a67b9eeb572"
+    },
+    {
+      "path": "frontend/src/lib/stream.test.ts",
+      "sha256": "a09bd39db428175080e9f0ee9cb4a5b55cf5ca366f1dae54de4a898e9b2095ec"
+    },
+    {
+      "path": "frontend/src/lib/stream.ts",
+      "sha256": "db650384bd97c24da7f45b11f21d3fb261d4d9cc60dfb2638a0c5271c8b0428f"
+    },
+    {
+      "path": "frontend/src/lib/terrain.test.ts",
+      "sha256": "02be58158db323387b4c4e98cb28bf79107515077a3b847393cc292ecb2c1be6"
+    },
+    {
+      "path": "frontend/src/lib/terrain.ts",
+      "sha256": "68944609071f4a646057d6fbe3a2b92ec5cb958e3de0bfa235ead96148b46bd3"
+    },
+    {
+      "path": "frontend/src/lib/terrainAssets.test.ts",
+      "sha256": "b8a7d885530f197b97fea9cfc90c05c52ecfe33a55ff469b526846f1d487d3f4"
+    },
+    {
+      "path": "frontend/src/lib/terrainAssets.ts",
+      "sha256": "1a2c73243ee80dcd6d8a935d4c40a0918eff1595ebb6be7f42ba6873fb4652e8"
+    },
+    {
+      "path": "frontend/src/lib/terrainGridCatalog.ts",
+      "sha256": "47d5026e44b2ec74003ca7b653fcc1666e615e0e2bf366c0c99fda9615a3b795"
+    },
+    {
+      "path": "frontend/src/lib/terrainRange.test.ts",
+      "sha256": "647e082e9d7580a59eca0ec7e6a96e54d60a55f161fb50772e0eab8f33553eea"
+    },
+    {
+      "path": "frontend/src/lib/terrainRange.ts",
+      "sha256": "02b493ddfe42a7f0eb0b1ee4ecf6c2b0f4f8070179b04cae976315a405f537d7"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserveDecode.test.ts",
+      "sha256": "1b8b76fd2807b1668e94e526331738f98ff4ae90bc05b79f432a88c57b1e9263"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserveDecode.ts",
+      "sha256": "b783845038d906d43828446eb29d5ae124be52fd17c81515536926bc99d5e035"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserveTypes.ts",
+      "sha256": "8e1fb2d8b92c4fdaa21e5dd93f4381c3a304ea2f3d58f12662f6a3353f770d12"
+    },
+    {
+      "path": "frontend/src/lib/terrainScenes.test.ts",
+      "sha256": "d0a6e09fb7b07554d5cf29dd724e2d2f823a82f55a6e8893dea5cd66aa2f574c"
+    },
+    {
+      "path": "frontend/src/lib/terrainScenes.ts",
+      "sha256": "f5e0c13fa6bb386237836cc4d563e74ff0b2598fd2b7f00bb4414c07c9f436ef"
+    },
+    {
+      "path": "frontend/src/lib/types.ts",
+      "sha256": "77e7c2c2d7dc86594373c20a273aecba2da4a2c3fcf89dc261939fcc584aee9e"
+    },
+    {
+      "path": "frontend/src/lib/weatherIcon.test.ts",
+      "sha256": "c552db488a49f2e45b1dcf602c20da89a0dc387f48adfe026831bce0673524e6"
+    },
+    {
+      "path": "frontend/src/lib/weatherIcon.ts",
+      "sha256": "138f7ec25ff9e0de5364c370a259eade853dab6d0bef39d155e57c0fb82b3cc5"
+    },
+    {
+      "path": "frontend/src/pages/FieldPage.test.tsx",
+      "sha256": "51ab7afe6f53c622c2ac83c05db3c49cc46bf75dd72edec9b9360be9311855d9"
+    },
+    {
+      "path": "frontend/src/pages/FieldPage.tsx",
+      "sha256": "e4290fb6649bde9fbab244589e7da5b599bd0cfbf59a448f71c2d7c6666b0aa9"
+    },
+    {
+      "path": "frontend/src/pages/OpsPage.test.tsx",
+      "sha256": "2ff8382ad6c005588850e029b672012256a0e04ef910ce9a61e2689f135e902c"
+    },
+    {
+      "path": "frontend/src/pages/OpsPage.tsx",
+      "sha256": "eef94487fc44a17fc73048a6cbde8f293835b6cfc37788c7793dc6ba35768f97"
+    },
+    {
+      "path": "frontend/src/pages/TerrainPage.test.tsx",
+      "sha256": "8efadba68a3d40bde2b399978c1b68f0123132f0691c66dccb09febe10647810"
+    },
+    {
+      "path": "frontend/src/pages/TerrainPage.tsx",
+      "sha256": "44a4156955051d4787dd32a5b9ffae56942090e18c87727145e04d0a298c93b0"
+    },
+    {
+      "path": "frontend/src/test/setup.ts",
+      "sha256": "977afde26bba6a51325908cd7713cbfdc87d18f06b78b237c8f364c44864b7de"
+    },
+    {
+      "path": "frontend/src/components/ops/AutoRefreshIndicator.test.tsx",
+      "sha256": "f01f571f108d19477b9b33b584f211328d9dd5dd0faf5936e5978581b8aca29f"
+    },
+    {
+      "path": "frontend/src/components/ops/AutoRefreshIndicator.tsx",
+      "sha256": "26176ec1daec0cef7db2ca6dcc83e722fac65b424fb4b44ae06bdba1e407fff5"
+    },
+    {
+      "path": "frontend/src/components/ops/DataQualityView.tsx",
+      "sha256": "47971bcc1b3aae312c8929c4d546768e954ef914651793eb4d91cce5764deeff"
+    },
+    {
+      "path": "frontend/src/components/ops/GuideView.tsx",
+      "sha256": "24274bf7fb05da3b7c4456322161a8a9c8d0bcb02ccd643e2255c0fbf23c2265"
+    },
+    {
+      "path": "frontend/src/components/ops/LastReceptionTime.test.tsx",
+      "sha256": "7276de1c8e3c57ef25db98ee03c25183e95b1a58e8a15a0fcc40be58f6c35c96"
+    },
+    {
+      "path": "frontend/src/components/ops/LastReceptionTime.tsx",
+      "sha256": "ff247276b1ab0a95cd6065ac5e94aefe61ada66aa8085cd3b7ec2bda8dfa7a08"
+    },
+    {
+      "path": "frontend/src/components/ops/NotifyView.tsx",
+      "sha256": "e47919d6181e686b68b2ae59116fd3d18760c814c13fc1d489b006b71324f4e5"
+    },
+    {
+      "path": "frontend/src/components/ops/OpsUi.tsx",
+      "sha256": "44d27892774fc9e14d2ea631ed7d233925c4ec78c1d36b9f88634e09e484cfa4"
+    },
+    {
+      "path": "frontend/src/components/ops/OpsViews.test.tsx",
+      "sha256": "3bf519c9f5ccd3d9dc21f8395f9306ad7b02dd13e79d8592e8c2debb51d3067d"
+    },
+    {
+      "path": "frontend/src/components/ops/ReceptionDashboard.tsx",
+      "sha256": "62ea2787de9e228462a12dba1683c50b12d75ba791107b164ee75c4ecb68edc7"
+    },
+    {
+      "path": "frontend/src/components/ops/SystemView.tsx",
+      "sha256": "54a5b670977e9531d87f8a5345be61690fb485906331c9f58ae025a65563cdb0"
+    },
+    {
+      "path": "frontend/src/components/ops/TelemetryCharts.tsx",
+      "sha256": "242cb7d02320d7fd023c0c491f353babdfa0d0f5eac9137ce6d453f7296af7e3"
+    },
+    {
+      "path": "frontend/src/components/ops/TokenSecurityView.tsx",
+      "sha256": "4d94a2ff70bb2a5e03f82e3ff0e95124908cecc2143eff7629ba6790092df68c"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/baijiabao.ts",
+      "sha256": "809fefad612e807690fc077a3937bbc477c5e4ed282e091556d4a749a97afd60"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/baishuihe.ts",
+      "sha256": "28df56ab4390e8ca08c75ce4083344f0592ca59d9922fd5f7390d04dab14c962"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/bazimen.ts",
+      "sha256": "4c8f4ab17ec0c35992dd85f9b01a17a2ced246dc2ac271d8f3e5a8b489d5be89"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/gaolan.ts",
+      "sha256": "2f980f036c59240d02961a00c8c93f4b4244cf1d335fb2849cb1339d11ace4d5"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/index.ts",
+      "sha256": "3b45dab1f5f16d7d06631fc1c0e4d403a0c8bfbd5572199fa4670f62243bd7c7"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/lianziya.ts",
+      "sha256": "210b478aa648247a7c0ab442502f9d31e7bab5c97ee0c8b368a2d780afa2f06c"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/shuiping.ts",
+      "sha256": "c565b27ac2ba230dc6b4b0c1a932625804557a84345d9a220424664349ad9d2b"
+    },
+    {
+      "path": "frontend/src/lib/terrainReserve/xintan.ts",
+      "sha256": "236f555a4e784b2697c180b9b80fc36073464390db153f20c506852db79e7dd0"
+    },
+    {
+      "path": "backend/config.py",
+      "sha256": "584cc935fd896fa26496798f160fbe2a4892feb2b6f1e66813e9a74e13a20603"
+    },
+    {
+      "path": "backend/database.py",
+      "sha256": "1548485c8df32e4125b2b99d0c812527ce5c5b878f8119b1eb70d3792b6f5f9b"
+    },
+    {
+      "path": "backend/main.py",
+      "sha256": "0e1b5911a1d9f9ed015568e5294fb25c10dd0cb9823881b7e685f2cd9d9a09ca"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "sha256": "908291d7782f0729659a717e44ffbbe42072930dc74178bb90da3dd09706c0e4"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "sha256": "b4a0cd6ba5b2298657262e0ef23678fe5882e4dadf6acdad4f0bbf314b706b2f"
+    },
+    {
+      "path": "backend/.dockerignore",
+      "sha256": "a8f12d7e87aed546b80da469cbc98dc289c1bdb07937d6814b95c7ed96dbd252"
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "6c70d4701e6b09f9b23540da046be19da571fb400cb5006eeda856278a914b86"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "3ed27f55b86ac225ac2893d94bdaf3bcaa3fa7f9b62d03d5aae121b2839fd584"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "sha256": "ae28a83fb23f1c59d380864c3e7aab9e86e9d54db0d04286428906458fde6055"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "sha256": "2a086da85082e5b35f217f93d27b308b94c089d7a7a15b49e2e5a9a2094ce76e"
+    },
+    {
+      "path": "frontend/index.html",
+      "sha256": "ddb83592e8e0ddb715eabbd9f2723f58e091162c86c12f60346912fd8c4c111b"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "sha256": "257e1272ba46b6348bbe8727e031f053b9f74f1b1ca1a27f0f527c4079ddf14b"
+    },
+    {
+      "path": "frontend/nginx.conf",
+      "sha256": "353894b0b7445bbc0a8db1b26db0c45898da5f8f793c78b0aa184086b5e3037e"
+    },
+    {
+      "path": "frontend/.dockerignore",
+      "sha256": "7a8e7d52eb416ccbd92c412cdad3db330b7bfd7a579bc0b56545a94d2f9b2d96"
+    },
+    {
+      "path": "frontend/public/favicon.svg",
+      "sha256": "e2f2655b18276f6e6dc77ea9499308ab05df21fb68c2d9e505eabe95309b9dad"
+    },
+    {
+      "path": "deploy/docker-compose.yml",
+      "sha256": "cdc4965ee3442720b7ebf9ec794b486c81d25716d52566a655b39365629684b9"
+    },
+    {
+      "path": "backend/scripts/seed_demo_data.py",
+      "sha256": "996dac3eb14f16ca0a8aa71e0a807aa7d98c3c5b16bc8b82e46e561b31d9f06c"
+    },
+    {
+      "path": "backend/scripts/seed_demo_nodes.py",
+      "sha256": "0210025f1b12f0cee1863766a83d835d7cf1f2b6b172cf6860c3ceebfd56e485"
+    },
+    {
+      "path": "frontend/public/terrain/baijiabao-dem.png",
+      "sha256": "78023c64a731994706675b5d218004e0e908c0e2b1d41dfbb817cd0f4855e174"
+    },
+    {
+      "path": "frontend/public/terrain/baijiabao-grid-df673cf8bae5.bin",
+      "sha256": "df673cf8bae5d5876c8ce5cdab4f0072e94521d160b12c13ee4f253a632a37ae"
+    },
+    {
+      "path": "frontend/public/terrain/baijiabao-osm.json",
+      "sha256": "25aefa5d531e199336b61f867ffe3e2b205fa1112b8f3fda6d59b88f0b6bb252"
+    },
+    {
+      "path": "frontend/public/terrain/baijiabao.json",
+      "sha256": "e56e8ec1c843dacaa3c3e66848e480f2865f8f0d902505ccebc59423ae3eba47"
+    },
+    {
+      "path": "frontend/public/terrain/baishuihe-dem.png",
+      "sha256": "7a4d4239de369c8753837c312fd6d06e44398e458a50c1b7cab5ee430212322b"
+    },
+    {
+      "path": "frontend/public/terrain/baishuihe-grid-83118397c553.bin",
+      "sha256": "83118397c55305f79695954ecfbe5c1ae8e712284d4cef1cf9a1cd810ec21cc3"
+    },
+    {
+      "path": "frontend/public/terrain/baishuihe-osm.json",
+      "sha256": "dee00beaab030134e8ee3e943c023c69f0a5ccf64647b3e9c537eff62be90c65"
+    },
+    {
+      "path": "frontend/public/terrain/baishuihe.json",
+      "sha256": "9b0e7f4e9a64777f63bcaed9e31909c060a371b88594da0dce976609882f9eca"
+    },
+    {
+      "path": "frontend/public/terrain/bazimen-dem.png",
+      "sha256": "8b6f2bedab0bf4c3682e98b33033fed22e779b7dd122b7157910c83f8a95b751"
+    },
+    {
+      "path": "frontend/public/terrain/bazimen-grid-443f79f4c3ad.bin",
+      "sha256": "443f79f4c3ad2817ad92d69846a3c8c38478c69c2d99f9018551fe443cc032bc"
+    },
+    {
+      "path": "frontend/public/terrain/bazimen-osm.json",
+      "sha256": "406aec47d8f7e6bcb4902d55c57049d5d2c0038be4d5a54869a836afed38fef1"
+    },
+    {
+      "path": "frontend/public/terrain/bazimen.json",
+      "sha256": "6c225277a0afc09a3c540948387a9b83d615f32c51c91bfb2f3249741a4844ff"
+    },
+    {
+      "path": "frontend/public/terrain/gaolan-dem.png",
+      "sha256": "e7bde0fe86fcf1b9a36d3aa717c305dcc1320a7d2537eecdd579fea9767b8bb1"
+    },
+    {
+      "path": "frontend/public/terrain/gaolan-grid-7155398ffc0c.bin",
+      "sha256": "7155398ffc0ce6e7a6a5298cad66ea96b243c4d13c900122205b61508962b614"
+    },
+    {
+      "path": "frontend/public/terrain/gaolan-osm.json",
+      "sha256": "99263c3f0285393aeafaf0e82314309381590843534ba7e154864e68e39e05e5"
+    },
+    {
+      "path": "frontend/public/terrain/gaolan.json",
+      "sha256": "c838cf63af866ca1c866a3b17f9e1c40f15afed5597d6ae5e50f73c890ee0c4a"
+    },
+    {
+      "path": "frontend/public/terrain/lianziya-dem.png",
+      "sha256": "edd576f2d1d5961531de83e5fceaf61e4eeee15cefcc71ec7b163b3ca6fde299"
+    },
+    {
+      "path": "frontend/public/terrain/lianziya-grid-7ceec3570e46.bin",
+      "sha256": "7ceec3570e4612ba0d56cab0a822ae699afa865446212e23a8d74c3878521f58"
+    },
+    {
+      "path": "frontend/public/terrain/lianziya-osm.json",
+      "sha256": "35949ad0791ed0a58e1a542ed90c3296b24f46c1a458dccb1cfb209a8abae40d"
+    },
+    {
+      "path": "frontend/public/terrain/lianziya.json",
+      "sha256": "b530aae23d7b97485a5a7e218a27df7e5b764674503fc9cd5ca9aca3265ced19"
+    },
+    {
+      "path": "frontend/public/terrain/region_yangtze_osm.json",
+      "sha256": "37cbbda561538c39d72d3d82a5ccefbeffdd6ae3ac1ef1ebac96fa94ac2b8c1d"
+    },
+    {
+      "path": "frontend/public/terrain/shuiping-dem.png",
+      "sha256": "3ed53846be7de148f7cab9788275d6274356c6495d43d019fa6dc7fdfc9519e3"
+    },
+    {
+      "path": "frontend/public/terrain/shuiping-grid-93bfdeefa7c7.bin",
+      "sha256": "93bfdeefa7c743fa19f22fcd8df4d6f76c03c4d610119bb8aa3d1681d7158574"
+    },
+    {
+      "path": "frontend/public/terrain/shuiping-osm.json",
+      "sha256": "89ba44b37f64125fad2239f94a0b1d9f10870fb475646504feef89fa2e67d396"
+    },
+    {
+      "path": "frontend/public/terrain/shuiping.json",
+      "sha256": "c4aeae2ea745717c53cb436ddb0273858cd8ebf08c3bbdd2b642a6ffc16aacc7"
+    },
+    {
+      "path": "frontend/public/terrain/xintan-dem.png",
+      "sha256": "de9d57a60728a307afb28f86f38c36044aa0c4e91890d396b1b45c1407e282c8"
+    },
+    {
+      "path": "frontend/public/terrain/xintan-grid-17baa509f726.bin",
+      "sha256": "17baa509f7264befb48c4bc7f54e4e67c252deebd35ce7685c102f3d738a6c4b"
+    },
+    {
+      "path": "frontend/public/terrain/xintan-osm.json",
+      "sha256": "731aa953590a30fcf3592b6fd61633d604a18e9ba457cf38534e1a73e51ec45d"
+    },
+    {
+      "path": "frontend/public/terrain/xintan.json",
+      "sha256": "008eb5ddac73e0bbd36e99f6d56872851ad93ae0913d3dce124374acf9a8a810"
+    },
+    {
+      "path": "frontend/public/geo/china-full.json",
+      "sha256": "cf65d3f36823708e76f5423596335a59c392cbc7ad6fbb733cb616efcfdbb9fb"
+    },
+    {
+      "path": "frontend/public/assets/presentation-scenes-20261031-1a1fd9bb53e0.json",
+      "sha256": "1a1fd9bb53e04b6ad54e698396eeca7908fb877a24bf4add5aa54c444ed89eb0"
+    },
+    {
+      "path": "frontend/public/assets/presentation-scenes-20261031-5e61d15f9052.json",
+      "sha256": "5e61d15f905295a269bddfdda2ec433310fe03db3af8eb5ab9fb21d6eccb283b"
+    }
+  ]
+}

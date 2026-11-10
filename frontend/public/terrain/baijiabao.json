@@ -1,0 +1,28 @@
+{
+  "site": "baijiabao",
+  "center": [
+    110.759167,
+    30.983333
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    13231,
+    6706,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 110.72021484375,
+    "east": 110.7861328125,
+    "north": 31.01527898171125,
+    "south": 30.95876857077986
+  },
+  "elev_min": 54.0,
+  "elev_max": 1396.6,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}

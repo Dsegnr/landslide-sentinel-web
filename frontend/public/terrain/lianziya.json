@@ -1,0 +1,28 @@
+{
+  "site": "lianziya",
+  "center": [
+    110.790556,
+    30.943056
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    13233,
+    6708,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 110.76416015625,
+    "east": 110.830078125,
+    "north": 30.977609093348676,
+    "south": 30.92107637538488
+  },
+  "elev_min": 32.6,
+  "elev_max": 1487.5,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}

@@ -1,0 +1,28 @@
+{
+  "site": "gaolan",
+  "center": [
+    103.83,
+    36.03
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    12916,
+    6431,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 103.798828125,
+    "east": 103.86474609375,
+    "north": 36.049098959065645,
+    "south": 35.99578538642032
+  },
+  "elev_min": 1513.5,
+  "elev_max": 2164.3,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}

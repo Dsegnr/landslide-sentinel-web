@@ -1,0 +1,95 @@
+# 边坡哨兵 · 部署编排（api / frontend，可选 mysql）
+#
+# 对标揭榜挂帅 XINGTU 的部署方式，但做了三处改进：
+#   1. 端口全部可用环境变量覆盖，避免和别的项目（XINGTU 占了 3000/8081/3308）撞车；
+#   2. MySQL 默认只在宿主机回环可见（用 127.0.0.1 绑），要远程连库再显式改；
+#   3. `.env` 不烤进镜像，敏感配置全部运行时注入。
+#
+# 两种档位（**共用一台机器跑科研实验时用低配档**）：
+#   低配：docker compose -f deploy/docker-compose.yml up -d --build
+#         -> 只用 SQLite（零额外内存），api 限 320MB / 0.5 核，frontend 限 128MB / 0.2 核
+#   完整：在 deploy/.env 里把 DATABASE_URL 指向 mysql，再
+#         docker compose -f deploy/docker-compose.yml --profile mysql up -d --build
+#
+# 用法（在 web/ 目录下执行，配置写到 deploy/.env）：
+#   copy deploy\.env.example deploy\.env
+#   docker compose -f deploy/docker-compose.yml up -d --build
+#   docker compose -f deploy/docker-compose.yml exec api python scripts/seed_demo_data.py
+# 浏览器打开 http://localhost:${FRONTEND_HOST_PORT:-3000}
+
+services:
+  mysql:
+    # 不显式加 --profile mysql 时不会启动（低配档不需要它）
+    profiles: ["mysql"]
+    image: mysql:8.0
+    container_name: sentinel-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?请在 deploy/.env 里设置 MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: sentinel
+      TZ: Asia/Shanghai
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      # 与 GPU 实验共机时把缓冲池压到 64MB，避免 MySQL 默认配置吃掉几百 MB
+      - --innodb-buffer-pool-size=64M
+    ports:
+      # 默认只绑回环：本机 Navicat 能连，公网连不上（要远程连再改成 "3308:3306"）
+      - "127.0.0.1:${MYSQL_HOST_PORT:-3308}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot",
+             "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+    mem_limit: 512m
+    cpus: 1.0
+
+  api:
+    build:
+      context: ../backend
+    container_name: sentinel-api
+    environment:
+      # 默认 SQLite（零额外内存，适合和科研实验共机）；要用 MySQL 就在 deploy/.env 里
+      # 设 DATABASE_URL=mysql+pymysql://root:密码@mysql:3306/sentinel?charset=utf8mb4 并加 --profile mysql
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////app/data/sentinel.db}
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
+      APP_USERNAME: ${APP_USERNAME:-monitor}
+      APP_PASSWORD: ${APP_PASSWORD:-sentinel2026}
+      ADMIN_KEY: ${ADMIN_KEY:-admin-key-change-me}
+      ADMIN_TOKEN_MINUTES: ${ADMIN_TOKEN_MINUTES:-240}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://localhost:3000}
+      RESERVOIR_BINDINGS: ${RESERVOIR_BINDINGS:-}
+      TUYA_ACCESS_ID: ${TUYA_ACCESS_ID:-}
+      TUYA_ACCESS_KEY: ${TUYA_ACCESS_KEY:-}
+      TZ: Asia/Shanghai
+    ports:
+      - "${API_HOST_PORT:-8081}:8081"
+    volumes:
+      - api_data:/app/data          # SQLite 落盘，重建容器不丢数据
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: false             # 低配档没有 mysql 服务，不能因此起不来
+    restart: unless-stopped
+    # 与科研实验共机的关键：把我们的占用钉死，任何异常都抢不到大内存
+    mem_limit: 320m
+    cpus: 0.5
+
+  frontend:
+    build:
+      context: ../frontend
+    container_name: sentinel-frontend
+    ports:
+      - "${FRONTEND_HOST_PORT:-3000}:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+    mem_limit: 128m
+    cpus: 0.2
+
+volumes:
+  mysql_data:
+  api_data:

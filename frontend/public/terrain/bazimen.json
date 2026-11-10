@@ -1,0 +1,28 @@
+{
+  "site": "bazimen",
+  "center": [
+    110.758333,
+    30.971111
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    13231,
+    6707,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 110.72021484375,
+    "east": 110.7861328125,
+    "north": 30.996445897426383,
+    "south": 30.939924331023445
+  },
+  "elev_min": 32.6,
+  "elev_max": 1370.2,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}

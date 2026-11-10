@@ -1,0 +1,28 @@
+{
+  "site": "shuiping",
+  "center": [
+    110.616667,
+    30.993611
+  ],
+  "zoom": 14,
+  "grid": 3,
+  "size": [
+    768,
+    768
+  ],
+  "tiles": [
+    13225,
+    6706,
+    3,
+    3
+  ],
+  "bbox": {
+    "west": 110.58837890625,
+    "east": 110.654296875,
+    "north": 31.01527898171125,
+    "south": 30.95876857077986
+  },
+  "elev_min": 51.8,
+  "elev_max": 1156.4,
+  "source": "AWS Terrain Tiles (terrarium), public domain"
+}
